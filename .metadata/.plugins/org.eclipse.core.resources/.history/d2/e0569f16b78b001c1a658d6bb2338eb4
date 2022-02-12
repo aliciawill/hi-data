@@ -1,0 +1,12 @@
+package pack01;
+
+import javax.swing.JOptionPane;
+
+public class Test01 {
+
+	public static void main(String[] args) {
+		JOptionPane.showMessageDialog(null, "welcome");
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package pack02.subPack;
+
+public class Phone {
+	//멤버변수 3개 
+	String color; //선언! 전역변수!(global)
+	
+	//멤버메서드 2개
+	//toString()오버라이드
+
+}

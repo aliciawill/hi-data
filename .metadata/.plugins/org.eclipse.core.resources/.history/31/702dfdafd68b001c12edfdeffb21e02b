@@ -1,0 +1,8 @@
+package pack03;
+
+public class BasicProcess1 {
+	public static void main(String[] args) {
+		//기본 입출력
+		
+	}
+}

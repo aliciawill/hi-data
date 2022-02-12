@@ -1,0 +1,10 @@
+package pack03;
+
+import javax.swing.JOptionPane;
+
+public class BasicProcess1 {
+	public static void main(String[] args) {
+		//기본 입출력
+		JOptionPane.showInputDialog("나이를 입력");
+	}
+}

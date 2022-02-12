@@ -1,0 +1,21 @@
+package pack02.subPack;
+
+public class RoomMain {
+
+	public static void main(String[] args) {
+		//필요한 tv2대 가져다 놔주세요.
+		TV myTv = new TV();
+		TV yourTv = new TV();
+		myTv.ch = 7;
+		myTv.vol = 9;
+		myTv.onOff = true;
+		
+		//첫번째 tv에 ch, vol, onOff값 넣어주세요.
+		//그림과 비교해주세요.
+		
+		//전체 변수가 몇 개 생겼을까요.??
+		
+
+	}
+
+}
