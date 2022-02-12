@@ -1,0 +1,16 @@
+  995  clear
+  996  ls
+  997  cd deep04
+  998  ls
+  999  exit
+ 1000  /Users/administrator/opt/anaconda3/bin/jupyter_mac.command ; exit;
+ 1001  ls
+ 1002  cd Documents
+ 1003  ls
+ 1004  cd workspace-spring-tool-suite-4-4.12.1.RELEASE
+ 1005  ls
+ 1006  git init
+ 1007  git add .
+ 1008  git commit -m 'spring-data'
+ 1009  git remote add origin https://github.com/aliciawill/hi-data.git
+ 1010  git push -u origin master
