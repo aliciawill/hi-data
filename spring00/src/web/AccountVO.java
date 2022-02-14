@@ -1,4 +1,4 @@
-package pack03;
+package web;
 
 public class AccountVO {
 	private String name;
