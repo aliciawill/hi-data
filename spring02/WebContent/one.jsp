@@ -10,6 +10,7 @@
     	
     	MemberDAO dao = new MemberDAO();
     	MemberVO vo2 = dao.readOne(vo); //MemberVO
+    	
     %>
 <!DOCTYPE html>
 <html>
@@ -23,8 +24,11 @@
 	검색한 pw는 <%= vo2.getPw() %><br>
 	검색한 name는 <%= vo2.getName() %><br>
 	검색한 tel는 <%= vo2.getTel() %><br>
+<%}else{ %>
+	<h1 style=color:red>검색 정보 없음.</h1>
 <%} %>
-
-
 </body>
 </html>
+
+
+

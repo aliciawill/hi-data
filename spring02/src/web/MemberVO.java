@@ -3,8 +3,8 @@ package web;
 public class MemberVO {
 
 	//데이터들을 전달할 때
-	//데이터들을 넣어줄 가방역할의 클래스가 필요
-	//변수를 만들어서 값만 넣었다 뻈다만 함.
+	//데이터들을 넣어줄 "가방역할"의 클래스가 필요
+	//변수를 만들어서 값만 넣었다 뺐다만 함.
 	//Value Object
 	//Data Transfer Object(DTO)
 	private String id;
@@ -36,12 +36,10 @@ public class MemberVO {
 	public void setTel(String tel) {
 		this.tel = tel;
 	}
+	
 	@Override
 	public String toString() {
 		return "MemberVO [id=" + id + ", pw=" + pw + ", name=" + name + ", tel=" + tel + "]";
 	}
-	
-	
-	
-	
+
 }

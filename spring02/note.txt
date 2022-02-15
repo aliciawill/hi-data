@@ -1,0 +1,10 @@
+1. index.html
+2. create.jsp
+	1) 입력한 값 받아왔음.
+	2) vo를 만들어서 값 집어넣음. -- MemberVO
+	3) vo를 dao의 create()의 입력값으로 주면서 호출
+	   -- MemberDAO
+    4) 결과 html이 브라우저에 도착.
+
+
+one.jsp?id=apple    

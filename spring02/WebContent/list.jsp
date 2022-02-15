@@ -1,14 +1,15 @@
+<%@page import="web.MemberVO"%>
 <%@page import="java.util.ArrayList"%>
+<%@page import="web.MemberDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="web.*" %>
     <%
-    	MemberDAO dao=new MemberDAO();
-    	//import: 클릭 후, 컨트롤+쉬프트+m
-    	//java에서 import : 컨트롤+쉬프트+o
-    	ArrayList<MemberVO> list=dao.readAll();
+    	MemberDAO dao = new MemberDAO();
+    //jsp에서 import : 클릭 후, 컨트롤+쉬프트+m
+    //java에서 import : 컨트롤+쉬프트+o(영) 
+    	ArrayList<MemberVO> list = dao.readAll();
     %>
-    <!--
+    <!-- 
     	한줄복사 : 컨트롤 + 알트 + 화살표 아래
     	한줄이동 : 알트 + 화살표 방향
     	한줄삭제 : 컨트롤 + d
@@ -26,15 +27,23 @@
 </head>
 <body>
 <%
-	for(MemberVO vo:list)
-	{
+	for(MemberVO vo2 : list){
 %>
-		검색한 id는 <%= vo.getId() %><br>
-		검색한 name는 <a href="one.jsp?id=<%= vo.getId() %>"><%= vo.getName() %></a><br>
-		
-		<hr>
-<%
+	검색한 id는 <%= vo2.getId() %><br>
+	검색한 name는 
+	<a href="one.jsp?id=<%= vo2.getId() %>">
+		<%= vo2.getName() %>
+	</a>
+	
+	<br>
+	<hr>
+<% 		
 	}
 %>
 </body>
 </html>
+
+
+
+
+
