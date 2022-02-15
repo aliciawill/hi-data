@@ -5,4 +5,6 @@
 	3) vo를 dao의 create()의 입력값으로 주면서 호출
 	   -- MemberDAO
     4) 결과 html이 브라우저에 도착.
-    
+
+
+one.jsp?id=apple    
