@@ -11,6 +11,8 @@
    	 <script type="text/javascript">
    	 	call()
    	 	
+   	 	//Document Object Model(DOM) tree
+   	 	//document.ready()
    	 	$(function() { 
    	 		//JQUERY: 자주 쓰는 자바스크립트 기능을
    	 		// 라이브러리로 만들어놓은 것.
@@ -20,14 +22,14 @@
    	 </script>
    </head>
    <body>
-   환영합니다.....<br>
-   <hr>
-   <form action="create">
-   아이디   : <input type="text" name="id"><br>
-   패스워드   : <input type="text" name="pw"><br>
-   이름 : <input type="text" name="name"><br>
-   전화번호 : <input type="text" name="tel"><br>
-   <button>회원가입 요청</button>
+   	환영합니다.....<br>
+   	<hr>
+   	<form action="create">
+   		아이디   : <input type="text" name="id"><br>
+   		패스워드   : <input type="text" name="pw"><br>
+   		이름 : <input type="text" name="name"><br>
+   		전화번호 : <input type="text" name="tel"><br>
+   		<button>회원가입 요청</button>
    </form>
    <br>
    <hr color="blue">
