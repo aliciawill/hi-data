@@ -1,0 +1,7 @@
+@charset "UTF-8";
+hr {
+	width: 500px;
+	height: 50px;
+	background: orange;
+	border: 5px solid red;
+}

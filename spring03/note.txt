@@ -1,0 +1,12 @@
+1. alt + enter : 속성 
+ 	project facets
+ 		1) java 1.8
+ 		2) runtimes - tomcat
+2. pom.xml
+	1) java 1.8
+	2) spring framework 5.0.1
+3. webapp아래 index.jsp만들어서 실행!
+
+회원가입화면(view)--->
+컨트롤(control) : dao -->
+결과화면(view)

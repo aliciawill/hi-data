@@ -1,2 +1,4 @@
+PROMPT_WHEN_SAVEABLE_STILL_OPEN=false
+SHOW_TEXT_ON_PERSPECTIVE_BAR=true
 eclipse.preferences.version=1
 showIntro=false
