@@ -546,3 +546,18 @@ java.lang.IllegalStateException: No match available
 
 !ENTRY org.eclipse.wst.html.ui 1 1 2022-02-16 16:12:10.145
 !MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-16 16:52:52.382
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-16 16:52:52.383
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-16 16:52:55.316
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-16 16:52:55.316
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-16 16:52:55.317
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT

@@ -1,5 +1,7 @@
 package com.hi.mvc03;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -9,6 +11,17 @@ public class MemberController {
 	//회원과 관련된 여러가지 제어를 담당하는 클래스 
 	//회원가입,검색,수정,탈퇴,로그인 기능을 제어함.
 	
+	@RequestMapping("check.hi")
+	public void login(MemberVO vo, MemberDAO dao, HttpSession session) throws Exception {
+		System.out.println(vo);
+		boolean result = dao.login(vo);
+		if(result) {
+			//세션을 잡아두어라.
+			session.setAttribute("user", vo.getId());
+			//name을 세션으로 잡아서, 브라우저 2곳에서 
+			//id가 apple인 홍길동님 환영합니다.
+		}
+	}
 
 	@RequestMapping("create")
 	public void create(MemberVO vo, MemberDAO dao) throws Exception {

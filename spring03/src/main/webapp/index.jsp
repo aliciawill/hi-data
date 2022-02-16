@@ -17,7 +17,8 @@
    	 		//JQUERY: 자주 쓰는 자바스크립트 기능을
    	 		// 라이브러리로 만들어놓은 것.
    	 		// 복잡한 문법을 단순화 시켜줌.
-			alert('html이 ram에 모두 로딩되었음.')
+			//alert('html이 ram에 모두 로딩되었음.')
+			alert("${user}님 환영합니다.")
 		})
    	 </script>
    </head>
@@ -33,7 +34,7 @@
    </form>
    <br>
    <hr color="blue">
-   <form action="login.jsp">
+   <form action="check.hi">
    아이디 : <input type="text" name="id" style=background:lime;><br>
    패스워드   : <input type="text" name="pw"  style=background:lime;><br>
    <button style=background:yellow;color:red;width:100px;>로그인 요청</button>
