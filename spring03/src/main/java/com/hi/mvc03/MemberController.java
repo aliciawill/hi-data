@@ -20,6 +20,7 @@ public class MemberController {
 			session.setAttribute("user", vo.getId());
 			//name을 세션으로 잡아서, 브라우저 2곳에서 
 			//id가 apple인 홍길동님 환영합니다.
+			session.setAttribute("name", "홍길동");
 		}
 	}
 
