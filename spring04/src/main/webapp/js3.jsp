@@ -18,7 +18,7 @@
 		  $( "#dialog2" ).dialog();
 	  })
 	  $('#b2').click(function() {
-		  $( "#dialog2" ).css('visibility', 'visible')
+		  $( "#dialog" ).css('visibility', 'visible')
 		  $( "#dialog" ).dialog();
 	  })
     
