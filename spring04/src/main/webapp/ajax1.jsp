@@ -35,6 +35,23 @@ var no = ""
 				}
 				$('#result').html(noResult)
 		})//b2 click
+		$('#b3').click(function() {
+			$.ajax({
+				url : "money.do",
+				data : {
+					money : $('#money').val(),
+					choice : $('#choice').val()
+				},
+				success: function(x) {
+					alert('성공!!')
+					alert('결제금액 ' + x)
+				$('#result').html('결제금액 ' + x)
+				},
+				error: function() {
+					alert('실패!!')
+				} //error
+			}) //ajax
+		})//b3 click
 	})//$
 </script>
 </head>
@@ -45,6 +62,10 @@ var no = ""
 도착한 인증번호 입력 :
 <input type="text" id="tel2">
 <button id="b2">인증번호 확인</button>
+<hr color="red">
+결제할 금액 : <input type="text" id="money"><br>
+결제방법 : <input type="text" id="choice" placeholder="1)계좌이체, 2)카드, 3)휴대폰결제"><br>
+<button id="b3">결제금액 확인</button>
 <hr color="red">
 <div id="result"></div>
 </body>

@@ -12,6 +12,19 @@ public class BookController {
 	//hera@naver.com (at -에)
 	//Annotation (표시, 어노테이션)
 	
+	@RequestMapping("money.do")
+	public void ajax3(double money, int choice, Model model) {
+		switch (choice) {
+		case 1:
+			money = money * 0.7;
+			break;
+		case 2:
+			money = money * 0.9;
+			break;
+		}
+		model.addAttribute("moneyResult", (int)money);
+	}
+	
 	@RequestMapping("ajax1")
 	public void ajax1(String phone, Model model) {
 		//01045671234
