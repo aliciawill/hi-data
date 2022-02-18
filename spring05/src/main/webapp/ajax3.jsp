@@ -10,6 +10,7 @@
 $(function() { //dom(document object model) tree)
 	$('#b1').click(function() {
 		$.ajax({
+			url : 'resources/file/MOCK_DATA.json'
 			//url: "http://rss.hankooki.com/sports/sp_culture.xml",
 			url: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.chosun.com%2Farc%2Foutboundfeeds%2Frss%2Fcategory%2Fentertainments%2F%3FoutputType%3Dxml&api_key=rooa9cfdnkctmsnpiftxnozlzfyaunxvudzwajoq", 
 			data : {
