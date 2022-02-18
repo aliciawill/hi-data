@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+<!-- 싱글톤으로 만드는 설정.. -->		
+<!-- DBCP dbcp = new DBCP(); -->
+<bean id="dbcp" class="org.apache.commons.dbcp.BasicDataSource">
+    <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+    <property name="url" value="jdbc:mysql://localhost:3306/big"></property>
+    <property name="username" value="root"></property>
+    <property name="password" value="1234"></property>
+</bean>
+
+<bean id="config" class="org.mybatis.spring.SqlSessionFactoryBean">
+    <property name="dataSource" ref="dbcp"></property>
+    <property name="configLocation" value="classpath:config.xml"></property>
+</bean>
+
+<!-- myBatis의 싱글톤 객체 생성 -->
+<bean id="my" class="org.mybatis.spring.SqlSessionTemplate">
+    <constructor-arg ref="config"></constructor-arg>
+</bean>
+
+
+</bean>
+</beans>

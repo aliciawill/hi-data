@@ -15,6 +15,7 @@ $(function() { //dom(document object model) tree)
 				alert(result.length)
 				$(result).each(function(i, one) {
 					console.log(one.id)
+					//div안에 1000명의 성과 이름/이메일을 프린트
 				})
 			},
 			error: function() {
