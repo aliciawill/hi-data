@@ -4640,3 +4640,12 @@ java.io.IOException: Unable to resolve plug-in "org.springframework.ide.eclipse.
 
 !ENTRY org.eclipse.wst.html.ui 1 1 2022-02-18 13:04:24.486
 !MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-18 15:39:05.069
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-18 15:39:05.070
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-18 15:39:05.070
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
