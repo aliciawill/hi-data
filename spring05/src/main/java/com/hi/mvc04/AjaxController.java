@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
+@Controller //1)컨트롤러로 등록, 2)싱글톤 객체 생성(주소) 
 public class AjaxController {
 
 	

@@ -2,6 +2,8 @@ package com.hi.mvc04;
 
 import java.util.Random;
 
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +13,9 @@ public class BookController {
 	//@
 	//hera@naver.com (at -에)
 	//Annotation (표시, 어노테이션)
+	
+	@Autowired
+    BookDAO dao; 
 	
 	@RequestMapping("money.do")
 	public void ajax3(double money, int choice, Model model) {

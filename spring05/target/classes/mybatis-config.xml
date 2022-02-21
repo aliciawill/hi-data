@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- SQL문 정의할 때 VO표현을 간단하게 하고 싶은 경우. 
+     별명을 지어서 사용 -->
+   <typeAliases>
+      <typeAlias type="com.hi.mvc04.MemberVO" alias="memberVO"></typeAlias>
+      <typeAlias type="com.hi.mvc04.BookVO" alias="bookVO"></typeAlias>
+      <typeAlias type="com.hi.mvc04.BBSVO" alias="bbsVO"></typeAlias>
+   </typeAliases>
+   <mappers>
+   <!-- SQL문 정의하는 파일들의 목록을 지정. -->
+      <mapper resource="mapper/memberMapper.xml" />
+      <mapper resource="mapper/bookMapper.xml" />
+      <mapper resource="mapper/bbsMapper.xml" />
+   </mappers>
+</configuration>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bbs">
+	<insert id="create" parameterType="bbsVO"  >
+		insert into bbs values (#{id}, #{title}, #{content}, #{writer})
+	</insert>
+	<!-- r은 하나의 row, 전체리스트 rows  resultType을 가지고 있어야 함.-->
+	<!-- u는 id에 맞는 title, content수정  -->
+	<!-- d는 id에 맞는 게시물 삭제 -->
+</mapper>
+
+
+
+
+
+
+
+
+
+
+

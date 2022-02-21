@@ -5,7 +5,8 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 <!-- 싱글톤으로 만드는 설정.. -->		
-<!-- DBCP dbcp = new DBCP(); -->
+<!--DBCP dbcp = new DBCP(); -->
+<!-- DB프로그래밍의 1-2번을  해주는 클래스를 싱글톤 생성.  -->
 <bean id="dbcp" class="org.apache.commons.dbcp.BasicDataSource">
     <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
     <property name="url" value="jdbc:mysql://localhost:3306/big"></property>
@@ -13,16 +14,17 @@
     <property name="password" value="1234"></property>
 </bean>
 
+<!-- myBatis설정만을 담당해주는 클래스   -->
 <bean id="config" class="org.mybatis.spring.SqlSessionFactoryBean">
+	<!--DB프로그램 중 1-2번을 담당하는 dbcp를 끼워넣자.  -->
     <property name="dataSource" ref="dbcp"></property>
-    <property name="configLocation" value="classpath:config.xml"></property>
+    <!--DB프로그램 중 3번을 담당하는 파일의 위치와 파일이름 지정해주자.  -->
+    <property name="configLocation" value="classpath:mybatis-config.xml"></property>
 </bean>
 
 <!-- myBatis의 싱글톤 객체 생성 -->
+<!-- SqlSessionTemplate my = new SqlSessionTemplate(); -->
 <bean id="my" class="org.mybatis.spring.SqlSessionTemplate">
     <constructor-arg ref="config"></constructor-arg>
-</bean>
-
-
 </bean>
 </beans>
