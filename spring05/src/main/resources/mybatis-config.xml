@@ -8,7 +8,7 @@
    <typeAliases>
       <typeAlias type="com.hi.mvc04.MemberVO" alias="memberVO"></typeAlias>
       <typeAlias type="com.hi.mvc04.BookVO" alias="bookVO"></typeAlias>
-      <typeAlias type="com.hi.mvc04.BBSVO" alias="bbsVO"></typeAlias>
+      <typeAlias type="com.hi.mvc04.BbsVO" alias="bbsVO"></typeAlias>
    </typeAliases>
    <mappers>
    <!-- SQL문 정의하는 파일들의 목록을 지정. -->

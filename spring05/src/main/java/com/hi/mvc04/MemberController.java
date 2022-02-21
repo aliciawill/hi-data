@@ -1,9 +1,12 @@
 package com.hi.mvc04;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller //스프링 프레임워크에 컨트롤러 역할의 클래스로 등록 
@@ -13,6 +16,19 @@ public class MemberController {
 	MemberDAO dao; //주소주입!!
 	//회원과 관련된 여러가지 제어를 담당하는 클래스 
 	//회원가입,검색,수정,탈퇴,로그인 기능을 제어함.
+	
+	@RequestMapping("all")
+	public void all(Model model) {
+		List<MemberVO> list = dao.readAll();
+		System.out.println(list.size());
+		model.addAttribute("list", list);
+	}
+	
+	@RequestMapping("one")
+	public void one(MemberVO vo, Model model) {
+		MemberVO one = dao.readOne(vo);
+		model.addAttribute("one", one);
+	}
 	
 	@RequestMapping("check.hi")
 	public void login(MemberVO vo, HttpSession session) throws Exception {
@@ -41,15 +57,22 @@ public class MemberController {
 	//회원가입 기능을 처리해주세요.
 		
 	@RequestMapping("del") //핑크화면
-	public void del(MemberVO vo, MemberDAO dao) throws Exception {
+	public void del(MemberVO vo) throws Exception {
 		System.out.println("회원탈퇴 제어 요청됨.");
 		dao.delete(vo);
 	}
 	
 	@RequestMapping("up")
-	public void up(MemberVO vo, MemberDAO dao) throws Exception {
+	public String up(MemberVO vo) throws Exception {
 		System.out.println("회원수정 제어 요청됨.");
-		dao.update(vo);
+		int result = dao.update(vo);
+		if(result == 0) {
+//			return "error"; //views아래의 파일을 호출하는 경우 
+			return "redirect:member.jsp"; //webapp아래의 파일을 호출하는 경우
+			
+		}else {
+			return "up";
+		}
 	}
 	
 }

@@ -66,4 +66,16 @@ public class BookController {
 		System.out.println("북마크 제어 요청됨.");
 		dao.create(vo);
 	}
+	
+	@RequestMapping("all2")
+	public void all() {
+		
+	}
+	
+	@RequestMapping("one2")
+	public void one(BookVO vo, Model model) {
+		BookVO one = dao.read(vo);
+		model.addAttribute("one", one);
+	}
+	
 }

@@ -17,23 +17,22 @@ public class MemberDAO {
 	@Autowired
     SqlSessionTemplate my; 
 	
-	public void create(MemberVO vo) throws Exception {
+	public void create(MemberVO vo)  {
 		my.insert("member.create", vo);
 }
-	public MemberVO login(MemberVO vo) throws Exception {
+	public MemberVO login(MemberVO vo)  {
 		return my.selectOne("member.login", vo);
 	}
-	public MemberVO readOne(MemberVO vo) throws Exception {
+	public MemberVO readOne(MemberVO vo) {
 		return my.selectOne("member.one", vo);
-		
 	}
-	public List<MemberVO> readAll() throws Exception {
+	public List<MemberVO> readAll() {
 		return my.selectList("member.all");
 	}
-	public void update(MemberVO vo) throws Exception {
-		my.update("member.up", vo);
+	public int update(MemberVO vo){
+		return my.update("member.up", vo);
 	}
-	public void delete(MemberVO vo) throws Exception {
-		my.delete("member.del", vo);
+	public int delete(MemberVO vo){
+		return my.delete("member.del", vo);
 	}
 }
