@@ -3,6 +3,7 @@ package com.hi.mvc04;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,11 +25,11 @@ public class BookDAO {
 		System.out.println("dao에서 전달받은 값:" + vo);
 		my.insert("book.create", vo);
 	}
-	public void read(BookVO vo) {
-		my.selectOne("book.one", vo);
+	public BookVO read(BookVO vo) {
+		return my.selectOne("book.one", vo);
 	}
-	public void all() {
-		my.selectList("book.all");
+	public List<BookVO> all() {
+		return my.selectList("book.all");
 	}
 	public void delete(BookVO vo) {
 		my.delete("book.del", vo);

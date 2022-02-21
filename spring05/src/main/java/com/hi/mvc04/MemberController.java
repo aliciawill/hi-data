@@ -17,18 +17,18 @@ public class MemberController {
 	@RequestMapping("check.hi")
 	public void login(MemberVO vo, HttpSession session) throws Exception {
 		System.out.println(vo);
-		boolean result = dao.login(vo);
-		if(result) {
-			//세션을 잡아두어라.
-			session.setAttribute("user", vo.getId());
-			//name을 세션으로 잡아서, 브라우저 2곳에서 
-			//id가 apple인 홍길동님 환영합니다.
-			session.setAttribute("name", "홍길동");
-		}
+//		boolean result = dao.login(vo);
+//		if(result) {
+//			//세션을 잡아두어라.
+//			session.setAttribute("user", vo.getId());
+//			//name을 세션으로 잡아서, 브라우저 2곳에서 
+//			//id가 apple인 홍길동님 환영합니다.
+//			session.setAttribute("name", "홍길동");
+//		}
 	}
 
 	@RequestMapping("create")
-	public void create(MemberVO vo, MemberDAO dao) throws Exception {
+	public void create(MemberVO vo) throws Exception {
 		System.out.println("회원가입 제어 요청됨.");
 		//1. 입력한 값 받아오기 
 		//2. vo만들어서 넣기.

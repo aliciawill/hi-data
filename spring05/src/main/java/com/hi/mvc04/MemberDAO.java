@@ -20,7 +20,7 @@ public class MemberDAO {
 	public void create(MemberVO vo) throws Exception {
 		my.insert("member.create", vo);
 }
-	public boolean login(MemberVO vo) throws Exception {
+	public MemberVO login(MemberVO vo) throws Exception {
 		return my.selectOne("member.login", vo);
 	}
 	public MemberVO readOne(MemberVO vo) throws Exception {

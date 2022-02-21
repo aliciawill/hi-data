@@ -1,0 +1,11 @@
+- 만약 테이블 product을 db에 만든 경우
+	id, name, content, price
+- spring framework에서 어떤 파일들을 만들어주어야 할까요.
+  1) VO
+  2) DAO
+  3) SQL mapper file(CRUD) --> config파일에 추가
+  4) controller(create)
+  
+- 싱글톤으로 만들어야 하는 객체 
+  1)DAO 2)Controller 3)myBatis 4)dbcp
+   
