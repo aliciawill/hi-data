@@ -48,7 +48,9 @@ img {
 		</tr>
 		<tr>
 			<td>img</td>
-			<td>${one.img}</td>
+			<td>
+				<img src="resources/img/${one.img}">
+			</td>
 			<!-- 이미지가 보이게 w:150, h:150 -->
 		</tr>
 	</table>

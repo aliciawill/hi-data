@@ -1,5 +1,6 @@
 package com.hi.mvc04;
 
+import java.util.List;
 import java.util.Random;
 
 import org.mybatis.spring.SqlSessionTemplate;
@@ -68,8 +69,9 @@ public class BookController {
 	}
 	
 	@RequestMapping("all2")
-	public void all() {
-		
+	public void all(Model model) {
+		List<BookVO> list = dao.all();
+		model.addAttribute("list", list);
 	}
 	
 	@RequestMapping("one2")

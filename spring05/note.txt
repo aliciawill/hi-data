@@ -1,5 +1,20 @@
 - 만약 테이블 product을 db에 만든 경우
-	id, name, content, price
+	id, name, content, price, img
+- 제품 5개를 넣어서,
+  CRUD를 완성해보세요.
+- 2명이 한조로 해서.
+  1)spring06
+  2)com.hi.mvc06
+  3)project facets
+  4)pom.xml(jdk, springfw, dependency 5개)
+  5)web.xml에서 root-context.xml파일 경로 변경
+  6)root-context.xml에 3개의 싱글톤 객체 만들어주세요.
+  7)VO, DAO, Controller만들어주세요.
+  8)mapper: productMapper.xml
+  9)mybatis-config.xml: mapper파일 등록, alias등록
+  10)CRUD구현 
+  
+
 - spring framework에서 어떤 파일들을 만들어주어야 할까요.
   1) VO
   2) DAO
@@ -8,4 +23,5 @@
   
 - 싱글톤으로 만들어야 하는 객체 
   1)DAO 2)Controller 3)myBatis 4)dbcp
-   
+
+  http://localhost:9980/ajaxServer/one2?id=1
