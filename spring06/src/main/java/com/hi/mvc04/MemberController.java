@@ -30,6 +30,12 @@ public class MemberController {
 		model.addAttribute("one", one);
 	}
 	
+	@RequestMapping("preup")
+	public void preup(MemberVO vo, Model model) {
+		MemberVO one = dao.readOne(vo);
+		model.addAttribute("one", one);
+	}
+	
 	@RequestMapping("check.hi")
 	public void login(MemberVO vo, HttpSession session) throws Exception {
 		System.out.println(vo);

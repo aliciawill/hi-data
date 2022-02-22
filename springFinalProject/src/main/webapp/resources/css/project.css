@@ -1,0 +1,91 @@
+@charset "UTF-8";
+td{
+	background: yellow;
+	font: 20px 궁서 bold; 
+	width: 200px;
+	text-align: center;
+}
+
+input{
+	color: red;
+	font: 40px 굴림 bold;
+	background: white;
+}
+
+#total {
+	width: 800px;
+	height: 800px;
+	background-image: url(../img/back.png)
+}
+
+button{
+	color: green;
+	font: 45px 궁서 bold italic;
+	background-color: aqua;
+}
+
+a{
+	/* text-decoration: none; */
+	color: red;
+}
+
+button:hover{
+	background-color: gold;
+}
+
+#top {
+	width: 800px;
+	height: 100px;
+	background: lime;
+	display: table-cell;
+	vertical-align:middle;
+	padding-left:1px;  
+}
+
+#top2 {
+	border-top: 10px solid aqua;
+	border-bottom: 10px double white;
+	box-shadow: 10px 10px yellow;
+	border-radius: 100px 10px;
+	background: black;
+	color: yellow;
+	position: fixed;
+	top: 5px;
+	right:5px;
+	height: 100px;
+	width: 250px;
+}
+
+
+#content {
+	color: blue;
+	font: 25px 궁서 bold;
+}
+
+body {
+	color: blue;
+	/* 글자색: 파랑  */
+}
+
+li {
+	list-style: none;
+	float: left;
+	padding: 15px;
+}
+
+li:first-child {
+	border-radius: 20px 0 0 20px;
+}
+
+li:last-child {
+	border-radius: 0 20px 20px 0;
+}
+
+li:nth-child(2n) {
+	background: pink;
+}
+
+li:nth-child(2n+1) {
+	/* 홀수 */
+	background: orange;
+}

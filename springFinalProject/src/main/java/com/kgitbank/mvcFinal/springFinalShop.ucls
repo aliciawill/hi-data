@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <interface id="1" language="java" name="com.kgitbank.mvcFinal.ProductInter" project="springFinalProject" 
+    file="/springFinalProject/src/main/java/com/kgitbank/mvcFinal/ProductInter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="182" x="613" y="366"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" language="java" name="com.kgitbank.mvcFinal.ProductDTO" project="springFinalProject" 
+    file="/springFinalProject/src/main/java/com/kgitbank/mvcFinal/ProductDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="369" width="137" x="816" y="721"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="com.kgitbank.mvcFinal.ReplyInter" project="springFinalProject" 
+    file="/springFinalProject/src/main/java/com/kgitbank/mvcFinal/ReplyInter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="134" x="856" y="366"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" language="java" name="com.kgitbank.mvcFinal.MemberDAO" project="springFinalProject" 
+    file="/springFinalProject/src/main/java/com/kgitbank/mvcFinal/MemberDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="143" x="320" y="173"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="5" language="java" name="com.kgitbank.mvcFinal.BbsInter" project="springFinalProject" 
+    file="/springFinalProject/src/main/java/com/kgitbank/mvcFinal/BbsInter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="147" x="503" y="173"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="6" language="java" name="com.kgitbank.mvcFinal.MemberInter" project="springFinalProject" 
+    file="/springFinalProject/src/main/java/com/kgitbank/mvcFinal/MemberInter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="143" x="232" y="366"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="7" language="java" name="com.kgitbank.mvcFinal.ProductDAO" project="springFinalProject" 
+    file="/springFinalProject/src/main/java/com/kgitbank/mvcFinal/ProductDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="182" x="789" y="173"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.kgitbank.mvcFinal.BbsDTO" project="springFinalProject" 
+    file="/springFinalProject/src/main/java/com/kgitbank/mvcFinal/BbsDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="137" x="436" y="366"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.kgitbank.mvcFinal.ReplyDTO" project="springFinalProject" 
+    file="/springFinalProject/src/main/java/com/kgitbank/mvcFinal/ReplyDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="137" x="1008" y="721"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.kgitbank.mvcFinal.ReplyDAO" project="springFinalProject" 
+    file="/springFinalProject/src/main/java/com/kgitbank/mvcFinal/ReplyDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="134" x="1011" y="173"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.kgitbank.mvcFinal.MemberDTO" project="springFinalProject" 
+    file="/springFinalProject/src/main/java/com/kgitbank/mvcFinal/MemberDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="127" x="396" y="721"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="12">    
+    <bendpoint x="1020" y="366"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <realization id="13">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <dependency id="14">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="15">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="16">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="17">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <realization id="18">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <dependency id="19">    
+    <bendpoint x="825" y="366"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <realization id="20">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <dependency id="21">    
+    <bendpoint x="405" y="366"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

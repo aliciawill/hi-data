@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="member">
+	<select id="selectList" resultMap="rs">
+		select * from member
+	</select>
+
+	<select id="select" parameterType="memberDTO" resultType="memberDTO">
+		select * from member where id = #{id}
+	</select>
+	
+	<!--select한 결과를 dto의 어느 변수에 넣어줄지 규칙(orm)을 지정  -->
+	<resultMap type="memberDTO" id="rs">
+		<result property="id" column="id"/>
+		<result property="pw" column="pw"/>
+		<result property="name" column="name"/>
+		<result property="tel" column="tel"/>
+	</resultMap>
+
+	<delete id="delete" parameterType="memberDTO">
+		delete from member where id = #{id}
+	</delete>
+
+	<insert id="insert" parameterType="memberDTO">
+		insert into member values (#{id}, #{pw}, #{name}, #{tel})
+	</insert>
+
+	
+</mapper>

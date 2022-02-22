@@ -18,6 +18,7 @@
 회원정보 검색 결과입니다.
 <br> ${one}
 <hr color=yellow>
+<a href="preup?id=${one.id}">수정하기</a>
 <table border=1>
 	<tr>
 		<td>아이디</td>

@@ -25,6 +25,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/administrator/Desktop/spring06-mybatis(CRUD)_update2개주소.zip"/>
 			<item value="/Users/administrator/Desktop/spring06-mybatis(CRUD).zip"/>
 			<item value="/Users/administrator/Desktop/img.zip"/>
 			<item value="/Users/administrator/Desktop/mapper.zip"/>

@@ -1,0 +1,9 @@
+login처리 순서 
+
+1) member.jsp
+
+2) MemberController: login(vo)
+
+3) MemberDAO: login(vo) 
+
+4) MyBatis: selectOne(vo) ==> mapper(member.login)
