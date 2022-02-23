@@ -35,7 +35,7 @@
 			<jsp:include page="../../top2.jsp"></jsp:include>
 		</div>
 		<div id="center">
-			<p>게시물 등록이 완료되었습니다.</p>
+			<p>${result}</p>
 			<hr color="red">
 			<a href="bbsOne?id=${id}">
 				<button style="width: 200px; height: 50px;" class="btn btn-success">작성한 글확인</button>

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +18,38 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
 <script type="text/javascript">
-	
+	$(function() {
+		$('#del').click(function() {
+			if(confirm("정말로 삭제하시겠습니까?")){
+				//controller의 bbsDel요청 후,
+				//삭제가 성공하면, 
+				//bbs.jsp로 화면을 넘기면 됨
+				$.ajax({
+					url: "bbsDel",
+					data: {
+						id: ${one.id}	
+					},
+					success : function(result) {
+						/* 
+						int x = 100;
+						String y = "100";
+						== : 기본 데이터형만 가능 
+						*/
+						//js: 타입이 달라도 기본형과 String까지 비교 가능
+						/* 
+						x = 100
+						y = '100'
+						x == y 타입이 달라도 비교 가능 
+						x === y 타입이 동일해야 같다고 판단하는 비교 가능. */
+						
+						if(result == '1'){
+							location.href = "bbs.jsp"
+						}
+					}
+				})
+			}
+		})
+	})
 </script>
 <style>
 .left {
@@ -46,7 +78,20 @@
 			<a href="bbs.jsp">
 				<button style="width: 200px; height: 50px;" class="btn btn-success">게시물
 					전체 목록으로!</button>
-			</a><br>
+			</a>
+			<!-- 로그인한 사람과 작성자가 동일하면
+				수정, 삭제 버튼을 나타나게 해주자.
+				세션값과 one.writer가 동일하면!!
+			 -->
+			<c:if test="${userId eq one.writer}">
+				<a href="bbsUpdate.jsp">
+					<button style="width: 200px; height: 50px;" class="btn btn-success">수정하기</button>
+				</a> 
+				<button id="del" style="width: 200px; height: 50px;" class="btn btn-success">삭제하기</button>
+				
+			</c:if>
+			
+			<hr color=red>
 			<table width="500px">
 				<tr>
 					<td class="left">번호</td>

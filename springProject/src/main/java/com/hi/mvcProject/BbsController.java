@@ -36,7 +36,8 @@ public class BbsController {
 	}
 	@RequestMapping("bbsDel")
 	public void delete(BbsVO vo, Model model) {
-		
+		int result = dao.del(vo);
+		model.addAttribute("result", result);
 	}
 	@RequestMapping("bbsUp")
 	public void update(BbsVO vo, Model model) {
