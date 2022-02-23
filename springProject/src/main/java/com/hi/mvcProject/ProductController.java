@@ -52,6 +52,7 @@ public class ProductController {
 //		public void setAttribute(String name, Object value) {
 //			
 //		}
+		model.addAttribute("size", list.size());
 	}
 	
 	
