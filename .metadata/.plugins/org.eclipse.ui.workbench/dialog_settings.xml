@@ -25,6 +25,8 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/administrator/Desktop/springProject2-중간코드(bbst까지).zip"/>
+			<item value="/Users/administrator/Desktop/springProject2-중간코드(basket까지).zip"/>
 			<item value="/Users/administrator/Desktop/springProject-중간코드(product까지).zip"/>
 			<item value="/Users/administrator/Desktop/spring부트스트랩.zip"/>
 			<item value="/Users/administrator/Desktop/spring06-mybatis(CRUD)_update2개주소.zip"/>
@@ -41,6 +43,20 @@
 			<item value="/Users/administrator/Desktop/spring00_CRUD최종.zip"/>
 			<item value="/Users/administrator/Desktop/spring00.zip"/>
 			<item value="/Users/administrator/Desktop/test01.zip"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.internal.dialogs.WorkbenchEditorsDialog">
+		<item key="allPersp" value="false"/>
+		<item key="sort" value="0"/>
+		<list key="bounds">
+			<item value="1992"/>
+			<item value="152"/>
+			<item value="624"/>
+			<item value="443"/>
+		</list>
+		<list key="columns">
+			<item value="194"/>
+			<item value="389"/>
 		</list>
 	</section>
 </section>

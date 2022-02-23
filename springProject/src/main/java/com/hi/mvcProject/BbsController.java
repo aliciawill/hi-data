@@ -20,6 +20,8 @@ public class BbsController {
 	}
 	@RequestMapping("bbsOne")
 	public void one(BbsVO vo, Model model) {
+		//게시물 1개짜리 vo2
+		//replyList
 		BbsVO vo2 = dao.one(vo);
 		model.addAttribute("one", vo2);
 	}
