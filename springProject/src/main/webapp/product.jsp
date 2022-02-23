@@ -22,8 +22,8 @@
 	$(function() {
 		//alert('test...')
 		$.ajax({
-			url : "list",
-			success: function(result) {
+			url : "list", //views/list.jsp가 결과!
+			success: function(result) { //결과가 담겨진 table부분코드
 				$('#d1').html(result)
 			},
 			error: function() {
@@ -42,9 +42,9 @@
 			<jsp:include page="top2.jsp"></jsp:include>
 		</div>
 		<div id="center">
-		<h3>상품목록</h3>
-		<hr color="red">
-		<div id="d1"></div>
+			<h3>상품목록</h3>
+			<hr color="red">
+			<div id="d1"></div>
 		</div>
 	</div>
 </body>
