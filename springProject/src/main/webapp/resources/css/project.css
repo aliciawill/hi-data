@@ -33,6 +33,11 @@ input {
 input:hover {
 	background: yellow;
 }
+textarea {
+	background: yellow;
+	color: green;
+	font-weight: bold;
+}
 
 td:hover {
 	background: pink;

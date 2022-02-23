@@ -19,24 +19,13 @@
 <link rel="stylesheet" type="text/css" href="resources/css/project.css">
 <script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
 <script type="text/javascript">
-	$(function() {
-		//alert('test...')
-		$.ajax({
-			url : "bbsList", //views/bbsList.jsp가 결과!
-			success: function(result) { //결과가 담겨진 table부분코드
-				$('#d1').html(result)
-			},
-			error: function() {
-				alert('실패.@@@')
-			}
-		})
-	})
+	
 </script>
 <style>
-	td{
-		background: white;
-		height: 30px;
-	}
+td {
+	background: white;
+	height: 30px;
+}
 </style>
 </head>
 <body>
@@ -48,16 +37,23 @@
 			<jsp:include page="top2.jsp"></jsp:include>
 		</div>
 		<div id="center">
-			<h3>게시물 목록</h3>
-			<hr color="red">
-			
-			<% if(session.getAttribute("userId") != null) { %>
-			${userId}님 로그인되었습니다.
-			<a href="bbsInsert.jsp">
-				<button style="width:200px; height:50px;" class="btn btn-success" >글쓰기</button>
-			</a>
-			<% } %>
-			<div id="d1"></div>
+			<form action="bbsIn">
+				<div class="form-group">
+					<label for="title">title:</label> <input type="text"
+						class="form-control" name="title">
+				</div>
+				<div class="form-group">
+					<label for="content">content:</label> 					
+					<textarea rows="5" cols="5" class="form-control" name="content"
+						style="background: yellow;color: green; font-weight: bold;"
+					></textarea>
+				</div>
+				<div class="form-group">
+					<input type="hidden" name="writer"
+						 value="${userId}">
+				</div>
+				<button type="submit" class="btn btn-success">Submit</button>
+			</form>
 		</div>
 	</div>
 </body>

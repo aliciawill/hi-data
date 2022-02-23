@@ -30,7 +30,6 @@ public class CastingTest {
 		//String--Integer(형제관계에서는 형변환 사용불가)
 		//String age2 = (String)age;
 		//int<--->Integer, float<--->Float
-		
+		Object name2 = map.get("name");
 	}
-
 }

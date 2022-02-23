@@ -16,48 +16,34 @@
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
 <link rel="stylesheet" type="text/css" href="resources/css/project.css">
 <script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
 <script type="text/javascript">
-	$(function() {
-		//alert('test...')
-		$.ajax({
-			url : "bbsList", //views/bbsList.jsp가 결과!
-			success: function(result) { //결과가 담겨진 table부분코드
-				$('#d1').html(result)
-			},
-			error: function() {
-				alert('실패.@@@')
-			}
-		})
-	})
+	
 </script>
-<style>
-	td{
-		background: white;
-		height: 30px;
-	}
-</style>
 </head>
 <body>
 	<div id="total">
 		<div id="top">
-			<jsp:include page="top.jsp"></jsp:include>
+			<jsp:include page="../../top.jsp"></jsp:include>
 		</div>
 		<div id="top2">
-			<jsp:include page="top2.jsp"></jsp:include>
+			<jsp:include page="../../top2.jsp"></jsp:include>
 		</div>
 		<div id="center">
-			<h3>게시물 목록</h3>
+			<p>게시물 등록이 완료되었습니다.</p>
 			<hr color="red">
-			
-			<% if(session.getAttribute("userId") != null) { %>
-			${userId}님 로그인되었습니다.
-			<a href="bbsInsert.jsp">
-				<button style="width:200px; height:50px;" class="btn btn-success" >글쓰기</button>
+			<a href="bbsOne?id=${id}">
+				<button style="width: 200px; height: 50px;" class="btn btn-success">작성한 글확인</button>
+			</a> <a href="bbs.jsp">
+				<button style="width: 200px; height: 50px;" class="btn btn-success">목록보기</button>
+			</a> <a href="bbsInsert.jsp">
+				<button style="width: 200px; height: 50px;" class="btn btn-success">글쓰기</button>
 			</a>
-			<% } %>
-			<div id="d1"></div>
 		</div>
 	</div>
 </body>

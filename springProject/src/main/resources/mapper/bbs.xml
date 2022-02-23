@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="bbs">
+	<select id="createdId" resultType="bbsVO">
+	 	select * from bbs order by id desc limit 1
+	</select>
+	<insert id="in" parameterType="bbsVO">
+		insert into bbs values (null,
+		#{title}, #{content}, #{writer})
+	</insert>
+	<update id="up" parameterType="bbsVO">
+		update bbs set title = #{title},
+		content = #{content} where id = #{id}
+	</update>
+	<delete id="del" parameterType="bbsVO">
+		delete from bbs where id = #{id}
+	</delete>
+	<select id="one" parameterType="bbsVO" resultType="bbsVO">
+		select * from
+		bbs where id = #{id}
+	</select>
+	<select id="list" resultType="bbsVO">
+		select * from bbs
+	</select>
+</mapper>
