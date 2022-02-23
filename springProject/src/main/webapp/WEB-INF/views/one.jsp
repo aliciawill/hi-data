@@ -18,14 +18,12 @@
 		<div id="center">
 			<span style="font-size: 25px;">물건 상세 페이지</span>
 			<hr color=red>
+
 			<a href="product.jsp">
 				<button style="width: 200px; height: 50px;" class="btn btn-success">물건
 					전체 목록으로!</button>
 			</a>
-			<button id="plus" style="width: 200px; height: 50px;"  class="btn btn-danger">
-				<img alt="" src="resources/img/bag.png" width="50" height="50">
-			</button>
-			<table border="1">
+			<table >
 				<tr>
 					<td class="left">제품번호</td>
 					<td class="right">${one.id}</td>
@@ -51,6 +49,14 @@
 					<td class="left">제품이미지</td>
 					<td class="right"><img src="resources/img/${one.img}"></td>
 					<!-- 이미지가 보이게 -->
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button id="plus" style="width: 200px; height: 50px;"
+							class="btn btn-danger">
+							<img alt="" src="resources/img/bag.png" width="50" height="50">
+						</button>
+					</td>
 				</tr>
 			</table>
 

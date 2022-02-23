@@ -18,7 +18,7 @@
 		<jsp:include page="top2.jsp"></jsp:include>
 	</div>
 	<div id="center">
-		게시판 목록 
+			<h3 class="active">게시판 목록</h3> 
 	</div>
 </div>
 </body>
