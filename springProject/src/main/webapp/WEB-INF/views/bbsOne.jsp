@@ -105,7 +105,7 @@
 				세션값과 one.writer가 동일하면!!
 			 -->
 			<c:if test="${userId eq one.writer}">
-				<a href="bbsUpdate.jsp">
+				<a href="bbsUp?id=${one.id}">
 					<button style="width: 200px; height: 50px;" class="btn btn-success">수정하기</button>
 				</a> 
 				<button id="del" style="width: 200px; height: 50px;" class="btn btn-success">삭제하기</button>
