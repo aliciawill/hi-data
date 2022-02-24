@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="reply">
+
+	<select id="list" parameterType="bbsVO" resultType="replyVO">
+		select * from reply WHERE bbsid = #{id}
+	</select>
+
+	<insert id="insert" parameterType="replyVO">
+		insert into reply values (null, #{bbsId}, #{content}, #{writer})
+	</insert>
+	
+	<delete id="delete" parameterType="replyVO">
+		delete from reply where id = #{id}
+	</delete>
+
+</mapper>

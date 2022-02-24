@@ -19,6 +19,27 @@
 <script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
 <script type="text/javascript">
 	$(function() {
+		$('#insertBtn').click(function() {
+			$.ajax({
+				url : "replyInsert",
+				data : {
+					bbsId : ${one.id},
+					content : $('#reply').val(),
+					writer : '${userId}'
+				},
+				success: function(result) {
+					$('#reply').val('')
+					//성공하면, 현재 목록 아래에 붙여넣자.!
+					//alert('성공>> ' + result)
+					$('#replyTable').append(result + "<br>")
+				},
+				error: function() {
+					alert("ERROR!!")
+				}
+				
+			})
+		})
+		
 		$('#del').click(function() {
 			if(confirm("정말로 삭제하시겠습니까?")){
 				//controller의 bbsDel요청 후,
@@ -111,6 +132,29 @@
 					<td class="right">${one.writer}</td>
 				</tr>
 			</table>
+	<hr color=green>
+	<table id="replyTable">
+	<% if(session.getAttribute("userId") != null) { %>
+	<tr>
+		<td>
+		Reply : <input id="reply" style="width: 300px;">
+		<button id="insertBtn" style="width: 50px;">OK</button>		
+		</td>
+	</tr>
+	<%} %>
+	<c:forEach var="one" items="${list}">
+		<tr>
+			<td style='background: green; width: 450px; text-align: left; padding-left: 10px;'>
+				<img src="resources/img/re.png" width=30 height=30>${one.content} - ${one.writer}
+			</td>
+			<td style="background: green; width: 50px; text-align: right;">
+			<c:if test="${userId eq one.writer}">
+				<button id="deleteBtn" style="width: 50px;">X</button>
+			</c:if>
+			</td>
+		</tr>
+	</c:forEach>
+	</table>
 
 		</div>
 	</div>

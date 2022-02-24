@@ -13,6 +13,9 @@ public class BbsController {
 	@Autowired
 	BbsDAO dao;
 	
+	@Autowired
+	ReplyDAO dao2;
+	
 	@RequestMapping("bbsList")
 	public void list(BbsVO vo, Model model) {
 		List<BbsVO> list = dao.list();
@@ -24,7 +27,11 @@ public class BbsController {
 		//replyList
 		BbsVO vo2 = dao.one(vo);
 		model.addAttribute("one", vo2);
+		
+		List<ReplyVO> list = dao2.list(vo);
+		model.addAttribute("list", list);
 	}
+	
 	@RequestMapping("bbsIn")
 	public void insert(BbsVO vo, Model model) {
 		int result = dao.insert(vo);
