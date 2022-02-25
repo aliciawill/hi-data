@@ -19,6 +19,12 @@
 <script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
 <script type="text/javascript">
 	$(function() {
+		$('.deleteBtn').click(function() {
+			replyId = $(this).attr('replyId')
+			alert(replyId)
+			$('#' + replyId).empty()
+			
+		})
 		$('#insertBtn').click(function() {
 			$.ajax({
 				url : "replyInsert",
@@ -32,6 +38,7 @@
 					//성공하면, 현재 목록 아래에 붙여넣자.!
 					//alert('성공>> ' + result)
 					$('#replyTable').append(result + "<br>")
+					$('#replyTable').load(document.URL +  ' #replyTable');
 				},
 				error: function() {
 					alert("ERROR!!")
@@ -143,13 +150,13 @@
 	</tr>
 	<%} %>
 	<c:forEach var="one" items="${list}">
-		<tr>
+		<tr id="${one.id}">
 			<td style='background: green; width: 450px; text-align: left; padding-left: 10px;'>
 				<img src="resources/img/re.png" width=30 height=30>${one.content} - ${one.writer}
 			</td>
 			<td style="background: green; width: 50px; text-align: right;">
 			<c:if test="${userId eq one.writer}">
-				<button id="deleteBtn" style="width: 50px;">X</button>
+				<button class="deleteBtn" style="width: 50px;" replyId="${one.id}" >X</button>
 			</c:if>
 			</td>
 		</tr>

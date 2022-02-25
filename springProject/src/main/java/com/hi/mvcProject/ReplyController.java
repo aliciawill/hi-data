@@ -14,6 +14,8 @@ public class ReplyController {
 	@RequestMapping("replyInsert")
 	public void insert(ReplyVO vo, Model model) {
 		int result = dao.insert(vo);
+		ReplyVO vo2 = dao.createdId();
+		vo.setId(vo2.getId());
 		if(result == 1) {
 			model.addAttribute("one", vo);
 		}

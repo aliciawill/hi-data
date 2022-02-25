@@ -4,16 +4,23 @@
 
 <mapper namespace="reply">
 
+	<select id="createdId" resultType="ReplyVO">
+		select * from reply order by id desc limit 1
+	</select>
+
 	<select id="list" parameterType="bbsVO" resultType="replyVO">
-		select * from reply WHERE bbsid = #{id}
+		select * from
+		reply WHERE bbsid = #{id}
 	</select>
 
 	<insert id="insert" parameterType="replyVO">
-		insert into reply values (null, #{bbsId}, #{content}, #{writer})
+		insert into reply values
+		(null, #{bbsId}, #{content}, #{writer})
 	</insert>
-	
+
 	<delete id="delete" parameterType="replyVO">
-		delete from reply where id = #{id}
+		delete from reply where id =
+		#{id}
 	</delete>
 
 </mapper>

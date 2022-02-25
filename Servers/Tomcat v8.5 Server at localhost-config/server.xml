@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="spring06" path="/mvc04" reloadable="true" source="org.eclipse.jst.jee.server:spring06"/><Context docBase="springFinalProject" path="/mvcFinal" reloadable="true" source="org.eclipse.jst.jee.server:springFinalProject"/><Context docBase="springProject" path="/mvcProject" reloadable="true" source="org.eclipse.jst.jee.server:springProject"/><Context docBase="springBootStrap" path="/mvc001" reloadable="true" source="org.eclipse.jst.jee.server:springBootStrap"/></Host>
+      <Context docBase="spring06" path="/mvc04" reloadable="true" source="org.eclipse.jst.jee.server:spring06"/><Context docBase="springFinalProject" path="/mvcFinal" reloadable="true" source="org.eclipse.jst.jee.server:springFinalProject"/><Context docBase="springProject" path="/mvcProject" reloadable="true" source="org.eclipse.jst.jee.server:springProject"/><Context docBase="springBootStrap" path="/mvc001" reloadable="true" source="org.eclipse.jst.jee.server:springBootStrap"/><Context docBase="springCrawlingService" path="/mvcCrawling" reloadable="true" source="org.eclipse.jst.jee.server:springCrawlingService"/></Host>
     </Engine>
   </Service>
 </Server>
