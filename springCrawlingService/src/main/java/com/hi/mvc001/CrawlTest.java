@@ -31,9 +31,19 @@ public class CrawlTest {
 		System.out.println(list2.get(0).text());
 		//System.out.println(list2.get(6).text());
 		String today = list2.get(0).text();
-		String[] s = today.split(",");
-		String today2 = String.join("", s);
+		String[] s = today.split(","); //{"95","000"}
+		String today2 = String.join("", s); //"95000"
 		System.out.println(today2);
+		int today3 = Integer.parseInt(today2);
+		System.out.println(today3 + 100);
+		System.out.println("==========");
+		
+		Elements list3 = doc.select("table > tbody > tr:nth-child(1) > td:nth-child(2) span.blind");
+		System.out.println(list3.get(0).text());
+		
+		Elements list4 = doc.select("td.first span.blind");
+		System.out.println(list4.get(0).text());
+		
 	} catch (IOException e) {
 		System.out.println("크롤링하는 중 에러발생...");
 		e.printStackTrace();
