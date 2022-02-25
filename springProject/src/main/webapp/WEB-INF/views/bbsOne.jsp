@@ -19,13 +19,26 @@
 <script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
 <script type="text/javascript">
 	$(function() {
-		$('.deleteBtn').click(function() {
+		$(document).on('click', '.deleteBtn', function() {
 			replyId = $(this).attr('replyId')
 			alert(replyId)
-			$('#' + replyId).empty()
+			$.ajax({
+				url : "replyDelete",
+				data : {
+					id : replyId,
+				},
+				success: function(result) {
+					$('#' + replyId).empty()
+				},
+				error: function() {
+					alert("ERROR!!")
+				}
+				
+			})
+			
 			
 		})
-		$('#insertBtn').click(function() {
+		$(document).on('click', '#insertBtn', function() {
 			$.ajax({
 				url : "replyInsert",
 				data : {

@@ -23,6 +23,7 @@ public class ReplyController {
 
 	@RequestMapping("replyDelete")
 	public void delete(ReplyVO vo, Model model) {
+		System.out.println(vo);
 		dao.delete(vo);
 	}
 }

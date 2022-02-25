@@ -19,8 +19,7 @@
 	</insert>
 
 	<delete id="delete" parameterType="replyVO">
-		delete from reply where id =
-		#{id}
+		delete from reply where id = #{id}
 	</delete>
 
 </mapper>

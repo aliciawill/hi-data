@@ -30,11 +30,11 @@
 					<table>
 					<tr>
 						<td class="left">아이디</td>
-						<td class="right"><input  class="form-control input-lg"  type="text" name="id"></td>
+						<td class="right"><input  class="form-control input-lg"  type="text" name="id" value="song"></td>
 					</tr>
 					<tr>
 						<td class="left">패스워드</td>
-						<td class="right"><input  class="form-control input-lg"  type="text" name="pw"></td>
+						<td class="right"><input  class="form-control input-lg"  type="text" name="pw" value="song"></td>
 					</tr>
 					<tr>
 						<td colspan="2">
