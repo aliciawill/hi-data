@@ -22,28 +22,52 @@ public class CrawlTest {
 		Document doc = Jsoup.connect(url).get();
 		//System.out.println(doc);
 		Elements list = doc.select("span.code");
-		System.out.println(list.size());
-		System.out.println(list.get(0).text());
+		//System.out.println(list.size());
+		//System.out.println(list.get(0).text());
+		String code = list.get(0).text();
+		
+		Elements list5 = doc.select("#middle > div.h_company > div.wrap_company > h2 > a");
+		//System.out.println(list.size());
+		String company = list5.get(0).text(); //회사이름
+		//System.out.println(company);
 		
 		Elements list2 = doc.select("div.today span.blind");
 		//#middle > div.h_company > div.wrap_company > div > span.code
 		//System.out.println(list2.size());
-		System.out.println(list2.get(0).text());
+		//System.out.println(list2.get(0).text());
 		//System.out.println(list2.get(6).text());
 		String today = list2.get(0).text();
 		String[] s = today.split(","); //{"95","000"}
 		String today2 = String.join("", s); //"95000"
-		System.out.println(today2);
-		int today3 = Integer.parseInt(today2);
-		System.out.println(today3 + 100);
-		System.out.println("==========");
+		//System.out.println(today2);
+		int today3 = Integer.parseInt(today2); //오늘가
+		//System.out.println(today3 + 100);
+		//System.out.println("==========");
+		
 		
 		Elements list3 = doc.select("table > tbody > tr:nth-child(1) > td:nth-child(2) span.blind");
-		System.out.println(list3.get(0).text());
+		//System.out.println(list3.get(0).text());
+		String yesterday = list3.get(0).text();
+		String[] y = yesterday.split(","); //{"95","000"}
+		String yesterday2 = String.join("", y); //"95000"
+		int yesterday3 = Integer.parseInt(yesterday2);
 		
 		Elements list4 = doc.select("td.first span.blind");
-		System.out.println(list4.get(0).text());
+		//System.out.println(list4.get(0).text());
+		String high = list4.get(0).text();
+		String[] h = high.split(","); //{"94","900"}
+		String high2 = String.join("", h); //"94900"
+		int high3 = Integer.parseInt(high2);
 		
+		//1. 크롤링한 5개의 값을 vo에 넣어야 함.
+		StockVO vo = new StockVO();
+		vo.setCode(code);
+		vo.setCompany(company);
+		vo.setHigh(high3);
+		vo.setToday(today3);
+		vo.setYesterday(yesterday3);
+		System.out.println(vo);
+		//2. DAO에 vo을 주면서 insert해달라고 요청함. 
 	} catch (IOException e) {
 		System.out.println("크롤링하는 중 에러발생...");
 		e.printStackTrace();
