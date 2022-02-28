@@ -20,8 +20,9 @@ public class StockController {
 	
 	//입력한 코드(String)을 받아서 : controller 
 	@RequestMapping("stock.do")
-	public void insert2(String code) {
+	public String insert2(String code) {
 		service.crawl(code);
+		return "redirect:finance.jsp";
 	}
 	//크롤링을 한 후 : service 
 	//db에 넣자. : dao
