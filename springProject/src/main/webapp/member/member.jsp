@@ -18,6 +18,12 @@
 </head>
 <body>
 	<div id="total">
+	<%=
+	//컴퓨터에 저장된 절대경로 구할 때  
+	request.getSession().getServletContext().getRealPath("/")
+	//웹상에서 접근하는 절대경로 구할 때 
+	%><br><br>
+	<a href="${pageContext.request.contextPath}/bbs/bbs.jsp">bbs.jsp</a>
 		<div id="top">
 			<jsp:include page="../top.jsp"></jsp:include>
 		</div>
