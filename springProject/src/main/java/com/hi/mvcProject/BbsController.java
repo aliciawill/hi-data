@@ -34,6 +34,11 @@ public class BbsController {
 	
 	@RequestMapping("bbsIn")
 	public void insert(BbsVO vo, Model model) {
+		//리뷰<--- movie(oriId, img)
+		//insert into review values (null, #{oriId}, #{content}, #{writer})
+		//화면만들때는 
+		//review + movie(oriId, img)
+		
 		int result = dao.insert(vo);
 		BbsVO vo2 = dao.createdId();
 		String text = "게시물 작성 성공";

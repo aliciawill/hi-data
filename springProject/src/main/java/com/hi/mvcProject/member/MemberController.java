@@ -1,4 +1,4 @@
-package com.hi.mvcProject;
+package com.hi.mvcProject.member;
 
 import java.util.List;
 
@@ -34,7 +34,7 @@ public class MemberController {
 		}
 	}
 
-	@RequestMapping("create")
+	@RequestMapping("member/create")
 	public String create(MemberVO vo) throws Exception {
 		System.out.println(vo);
 		int result = dao.create(vo);

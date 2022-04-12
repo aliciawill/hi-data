@@ -4,7 +4,7 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.hi.mvcProject.MemberVO" alias="memberVO"></typeAlias>
+		<typeAlias type="com.hi.mvcProject.member.MemberVO" alias="memberVO"></typeAlias>
 		<typeAlias type="com.hi.mvcProject.ProductVO" alias="productVO"></typeAlias>
 		<typeAlias type="com.hi.mvcProject.BbsVO" alias="bbsVO"></typeAlias>
 		<typeAlias type="com.hi.mvcProject.ReplyVO" alias="replyVO"></typeAlias>

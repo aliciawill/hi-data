@@ -1,4 +1,4 @@
-package com.hi.mvcProject;
+package com.hi.mvcProject.member;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
