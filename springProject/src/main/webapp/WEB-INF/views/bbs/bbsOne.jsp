@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="resources/css/project.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/project.css">
 <!-- 합쳐지고 최소화된 최신 CSS -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -16,7 +16,7 @@
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="../resources/js/jquery-3.4.1.js"></script>
 <script type="text/javascript">
 	$(function() {
 		$(document).on('click', '.deleteBtn', function() {
@@ -106,11 +106,11 @@
 </head>
 <body>
 	<div id="total">
-		<div id="top">
-			<jsp:include page="../../top.jsp"></jsp:include>
+	<div id="top">
+			<jsp:include page="../../../top.jsp"></jsp:include>
 		</div>
 		<div id="top2">
-			<jsp:include page="../../top2.jsp"></jsp:include>
+			<jsp:include page="../../../top2.jsp"></jsp:include>
 		</div>
 		<div id="center">
 			<span style="font-size: 25px;">게시물 상세 페이지</span>
@@ -175,7 +175,7 @@
 		</tr>
 	</c:forEach>
 	</table>
-
+<a href="/mvcProject/member/member.jsp">회원사이트 </a>
 		</div>
 	</div>
 </body>

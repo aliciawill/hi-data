@@ -19,19 +19,18 @@
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <link rel="stylesheet"
 	href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css">
-<link rel="stylesheet" type="text/css" href="resources/css/project.css">
-<script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
+<link rel="stylesheet" href="../resources/demos/style.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/project.css">
+<script type="text/javascript" src="../resources/js/jquery-3.4.1.js"></script>
 </head>
 <body>
 	<div id="total">
-		<div id="top">
-			<jsp:include page="../../top.jsp"></jsp:include>
+	<div id="top">
+			<jsp:include page="../../../top.jsp"></jsp:include>
 		</div>
 		<div id="top2">
-			<jsp:include page="../../top2.jsp"></jsp:include>
-		</div>
-		<div id="center">
+			<jsp:include page="../../../top2.jsp"></jsp:include>
+		</div>center">
 			<br>
 			<p>수정이 완료되었습니다.!!</p>
 			<br> <a href="bbs.jsp">

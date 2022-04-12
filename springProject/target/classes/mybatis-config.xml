@@ -6,7 +6,7 @@
 	<typeAliases>
 		<typeAlias type="com.hi.mvcProject.member.MemberVO" alias="memberVO"></typeAlias>
 		<typeAlias type="com.hi.mvcProject.ProductVO" alias="productVO"></typeAlias>
-		<typeAlias type="com.hi.mvcProject.BbsVO" alias="bbsVO"></typeAlias>
+		<typeAlias type="com.hi.mvcProject.bbs.BbsVO" alias="bbsVO"></typeAlias>
 		<typeAlias type="com.hi.mvcProject.ReplyVO" alias="replyVO"></typeAlias>
 	</typeAliases>
 	

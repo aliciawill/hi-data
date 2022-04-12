@@ -6,6 +6,8 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.hi.mvcProject.bbs.BbsVO;
+
 @Component
 public class ReplyDAO {
 

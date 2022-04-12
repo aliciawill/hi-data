@@ -16,8 +16,8 @@
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="resources/css/project.css">
-<script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
+<link rel="stylesheet" type="text/css" href="../resources/css/project.css">
+<script type="text/javascript" src="../resources/js/jquery-3.4.1.js"></script>
 <script type="text/javascript">
 	
 </script>
@@ -31,10 +31,10 @@ td {
 <body>
 	<div id="total">
 		<div id="top">
-			<jsp:include page="top.jsp"></jsp:include>
+			<jsp:include page="../top.jsp"></jsp:include>
 		</div>
 		<div id="top2">
-			<jsp:include page="top2.jsp"></jsp:include>
+			<jsp:include page="../top2.jsp"></jsp:include>
 		</div>
 		<div id="center">
 			<form action="bbsIn">

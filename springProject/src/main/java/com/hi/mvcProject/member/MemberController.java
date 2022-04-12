@@ -17,7 +17,7 @@ public class MemberController {
 	//회원과 관련된 여러가지 제어를 담당하는 클래스 
 	//회원가입,검색,수정,탈퇴,로그인 기능을 제어함.
 	
-	@RequestMapping("check")
+	@RequestMapping("member/check")
 	public String login(MemberVO vo, HttpSession session) throws Exception {
 		System.out.println(vo);
 		MemberVO vo2 = dao.login(vo);
@@ -30,7 +30,7 @@ public class MemberController {
 			session.setAttribute("userName", vo2.getName());
 			return "redirect:member.jsp";
 		}else { //로그인에 실패했을 때 
-			return "check";
+			return "member/check";
 		}
 	}
 
@@ -39,13 +39,13 @@ public class MemberController {
 		System.out.println(vo);
 		int result = dao.create(vo);
 		if(result == 1) {
-			return "ok";
+			return "member/ok";
 		}else {
-			return "create";
+			return "member/create";
 		}
 	}
 
-	@RequestMapping("logout")
+	@RequestMapping("member/logout")
 	public String logout(HttpSession session) {
 		session.invalidate();
 		return "redirect:member.jsp";

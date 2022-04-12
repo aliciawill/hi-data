@@ -1,4 +1,4 @@
-package com.hi.mvcProject;
+package com.hi.mvcProject.bbs;
 
 import java.util.List;
 

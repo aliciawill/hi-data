@@ -20,30 +20,29 @@
 <link rel="stylesheet"
 	href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="/resources/demos/style.css">
-<link rel="stylesheet" type="text/css" href="resources/css/project.css">
-<script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
+<link rel="stylesheet" type="text/css" href="../resources/css/project.css">
+<script type="text/javascript" src="../resources/js/jquery-3.4.1.js"></script>
 <script type="text/javascript">
-	
+	//alert("회원가입 성공!!!")
+	$(function() {
+		alert('회원가입 성공! 로그인해주세요.~!')
+		location.href="member.jsp";
+	})
 </script>
 </head>
 <body>
 	<div id="total">
 		<div id="top">
-			<jsp:include page="../../top.jsp"></jsp:include>
+			<jsp:include page="../../../top.jsp"></jsp:include>
 		</div>
 		<div id="top2">
-			<jsp:include page="../../top2.jsp"></jsp:include>
+			<jsp:include page="../../../top2.jsp"></jsp:include>
 		</div>
 		<div id="center">
-			<p>${result}</p>
-			<hr color="red">
-			<a href="bbsOne?id=${id}">
-				<button style="width: 200px; height: 50px;" class="btn btn-success">작성한 글확인</button>
-			</a> <a href="bbs.jsp">
-				<button style="width: 200px; height: 50px;" class="btn btn-success">목록보기</button>
-			</a> <a href="bbsInsert.jsp">
-				<button style="width: 200px; height: 50px;" class="btn btn-success">글쓰기</button>
-			</a>
+			<div id="dialog" title="Basic dialog">
+				<p>회원가입 성공.!!로그인 해주세요.!!</p>
+				<p><a href="/mvcProject/member/member.jsp">로그인 페이지로!!</a></p>
+			</div>
 		</div>
 	</div>
 </body>

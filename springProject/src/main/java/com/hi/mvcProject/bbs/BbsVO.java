@@ -1,4 +1,4 @@
-package com.hi.mvcProject;
+package com.hi.mvcProject.bbs;
 
 public class BbsVO {
 	private int id;
