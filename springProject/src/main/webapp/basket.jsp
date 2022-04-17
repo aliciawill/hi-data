@@ -18,9 +18,22 @@
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
+	<script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+	$(function() {
+		alert('@@@@')
+		
+		$('#pw').focusout(function() {
+		alert('@@@@')
+			$(this).text('')
+		})	
+	
+	})
+	
+</script>
 </head>
 <body>
+<input id="pw" value="hello">
 	<div id="total">
 		<div id="top">
 			<jsp:include page="top.jsp"></jsp:include>
