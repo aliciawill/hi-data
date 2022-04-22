@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
-<entry loc="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home" stamp="1591519304000"/>
-<entry loc="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home" stamp="1604942930000"/>
-<entry loc="/Applications/SpringToolSuite4 2.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.0.v20211012-1059" stamp="1635235936000"/>
-<entry loc="/Applications/SpringToolSuite4 2.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.0.v20211012-1059/jre" stamp="1635235936000"/>
-<entry loc="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home" stamp="1607348919000"/>
+    <entry loc="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home" stamp="1591519304592"/>
+    <entry loc="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home" stamp="1604942930000"/>
+    <entry loc="/Applications/SpringToolSuite4 2.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.0.v20211012-1059" stamp="1635235936000"/>
+    <entry loc="/Applications/SpringToolSuite4 2.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.0.v20211012-1059/jre" stamp="1635235936000"/>
+    <entry loc="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home" stamp="1607348919104"/>
 </dirs>

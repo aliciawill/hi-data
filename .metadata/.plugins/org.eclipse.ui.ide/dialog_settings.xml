@@ -4,10 +4,11 @@
 		<item value="com.ianbrandt.tools.m2e.mdp.feature:0.0.4.201409291703"/>
 		<item value="net.mihai-nita.ansicon:1.4.6.202112080311"/>
 		<item value="org.eclipse.buildship:3.1.5.v20210113-0929"/>
+		<item value="org.eclipse.cvs:1.4.2000.v20211124-1800"/>
 		<item value="org.eclipse.egit.gitflow.feature:6.0.0.202111291000-r"/>
 		<item value="org.eclipse.egit:6.0.0.202111291000-r"/>
-		<item value="org.eclipse.emf.common:2.24.0.v20210924-1718"/>
-		<item value="org.eclipse.emf.ecore:2.26.0.v20210924-1718"/>
+		<item value="org.eclipse.emf.common:2.25.0.v20220123-0838"/>
+		<item value="org.eclipse.emf.ecore:2.27.0.v20220123-0838"/>
 		<item value="org.eclipse.epp.mpc:1.9.2.v20210826-0851"/>
 		<item value="org.eclipse.help:2.3.800.v20211124-1800"/>
 		<item value="org.eclipse.jdt:3.18.1000.v20211124-1800"/>
@@ -43,7 +44,11 @@
 		<item value="org.eclipse.tm.terminal.view.feature:10.5.0.202110140133"/>
 		<item value="org.eclipse.userstorage:1.2.0.v20210517-0327"/>
 		<item value="org.eclipse.wst.common.fproj:3.7.3.v202111212041"/>
+		<item value="org.eclipse.wst.json_ui.feature:1.1.10.v202103121626"/>
+		<item value="org.eclipse.wst.web_ui.feature:3.24.0.v202111190506"/>
+		<item value="org.eclipse.wst.xml.xpath2.processor.feature:2.0.302.v201909031400"/>
 		<item value="org.eclipse.wst.xml_ui.feature:3.24.0.v202111190506"/>
+		<item value="org.eclipse.wst.xsl.feature:1.3.900.v202110312208"/>
 		<item value="org.jboss.tools.m2e.wro4j.feature:1.1.0.201406251020"/>
 		<item value="org.jboss.tools.maven.apt.feature:1.5.2.201812241535"/>
 		<item value="org.sonatype.m2e.buildhelper.feature:0.15.0.201207090124"/>

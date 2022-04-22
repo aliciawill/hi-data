@@ -30,4 +30,9 @@
 		<property name="password" value="${db.pass}"></property>
 	</bean>
 
+
+
+
+
+
 </beans>

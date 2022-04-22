@@ -8,6 +8,7 @@
 		<typeAlias type="com.hi.mvcProject.ProductVO" alias="productVO"></typeAlias>
 		<typeAlias type="com.hi.mvcProject.bbs.BbsVO" alias="bbsVO"></typeAlias>
 		<typeAlias type="com.hi.mvcProject.ReplyVO" alias="replyVO"></typeAlias>
+		<typeAlias type="com.hi.mvcProject.TestVO" alias="testVO"></typeAlias>
 	</typeAliases>
 	
 	<mappers>
@@ -15,6 +16,7 @@
 		<mapper resource="mapper/product.xml" />
 		<mapper resource="mapper/bbs.xml" />
 		<mapper resource="mapper/reply.xml" />
+		<mapper resource="mapper/test.xml" />
 	</mappers>
 </configuration>
 
