@@ -54,6 +54,8 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.hi.mvcProject.member.MemberVO"/>
     <fullyQualifiedTypeName name="com.hi.mvcProject.bbs.BbsVO"/>
-    <fullyQualifiedTypeName name="com.hi.mvcProject.high.PhoneClass"/>
+    <fullyQualifiedTypeName name="com.hi.mvcProject.high.AppleKorea"/>
+    <fullyQualifiedTypeName name="com.hi.mvcProject.high.AppleUSA"/>
     <fullyQualifiedTypeName name="com.hi.mvcProject.high.PhoneInteface"/>
+    <fullyQualifiedTypeName name="com.hi.mvcProject.high.PhoneClass"/>
 </qualifiedTypeNameHistroy>
