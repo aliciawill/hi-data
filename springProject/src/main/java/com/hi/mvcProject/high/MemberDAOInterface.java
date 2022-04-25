@@ -1,4 +1,4 @@
-package com.hi.mvcProject;
+package com.hi.mvcProject.high;
 
 import com.hi.mvcProject.member.MemberVO;
 

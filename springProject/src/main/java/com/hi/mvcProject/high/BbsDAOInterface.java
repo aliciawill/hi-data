@@ -1,4 +1,4 @@
-package com.hi.mvcProject;
+package com.hi.mvcProject.high;
 
 public interface BbsDAOInterface {
 
