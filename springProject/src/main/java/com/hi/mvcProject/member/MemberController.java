@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MemberController {
 
 	@Autowired
-	MemberDAO dao; //주소주입!!
+	MemberInter dao; //주소주입!!
 	//회원과 관련된 여러가지 제어를 담당하는 클래스 
 	//회원가입,검색,수정,탈퇴,로그인 기능을 제어함.
 	
