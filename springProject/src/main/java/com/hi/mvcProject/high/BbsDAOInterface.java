@@ -19,6 +19,6 @@ public interface BbsDAOInterface {
 	//public abstract 생략가능!!
 	public abstract int insert(BbsVO vo);
 	public int update(BbsVO vo);
-	public int delete(BbsVO vo);
+	abstract int delete(BbsVO vo);
 	BbsVO readOne(BbsVO vo);
 }

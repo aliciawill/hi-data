@@ -52,4 +52,8 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.hi.mvcProject.member.MemberVO"/>
+    <fullyQualifiedTypeName name="com.hi.mvcProject.bbs.BbsVO"/>
+    <fullyQualifiedTypeName name="com.hi.mvcProject.high.PhoneClass"/>
+    <fullyQualifiedTypeName name="com.hi.mvcProject.high.PhoneInteface"/>
 </qualifiedTypeNameHistroy>
