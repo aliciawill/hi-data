@@ -4,6 +4,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -16,8 +17,14 @@ public class MyWindow4 {
 	
 	public static void main(String[] args) {
 			JFrame	f = new JFrame();
-			f.setSize(500, 500);
+			f.setSize(1000, 800);
 			f.setLayout(new FlowLayout());
+			
+			JLabel l0 = new JLabel();
+			//image의 위치는 project아래에!
+			ImageIcon icon = new ImageIcon("dog.jpg");
+			l0.setIcon(icon);
+			f.add(l0);
 			
 			JLabel l1 = new JLabel("숫자1"); //글자!
 			JLabel l2 = new JLabel("숫자2");
@@ -28,9 +35,6 @@ public class MyWindow4 {
 			f.add(t1);
 			f.add(l2);
 			f.add(t2);
-			
-			
-			
 			
 			JButton b1 = new JButton("더하기");
 			JButton b2 = new JButton("빼기");
