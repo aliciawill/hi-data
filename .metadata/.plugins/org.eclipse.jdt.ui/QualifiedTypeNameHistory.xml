@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="pack02.subPack.TV"/>
     <fullyQualifiedTypeName name="pack02.subPack.Phone"/>
     <fullyQualifiedTypeName name="pack01.ReturnClass"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
@@ -54,9 +53,11 @@
     <fullyQualifiedTypeName name="com.hi.mvcProject.high.AppleUSA"/>
     <fullyQualifiedTypeName name="com.hi.mvcProject.high.PhoneInteface"/>
     <fullyQualifiedTypeName name="com.hi.mvcProject.high.PhoneClass"/>
-    <fullyQualifiedTypeName name="java.awt.Font"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="javax.swing.JFrame"/>
     <fullyQualifiedTypeName name="javax.swing.JButton"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="java.awt.Font"/>
+    <fullyQualifiedTypeName name="인터페이스사용.ClickEvent1"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="인터페이스사용.ClickEvent2"/>
 </qualifiedTypeNameHistroy>
