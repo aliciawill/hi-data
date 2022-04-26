@@ -49,7 +49,12 @@ public class MyWindow2 {
 		b4.setBounds(260, 200, 200, 100);
 		b4.setForeground(Color.red);
 		
+		ClickEvent1 event1 = new ClickEvent1();
+
+		b1.addActionListener(event1);
 		
+		//b2를 처리할 수 있는 클래스를 actionlistener인터페이스에따라서
+		//구현한 후, b2에 처리할 수 있는 클래스로 설정해주세요.!
 		f.setVisible(true);
 	}
 }
