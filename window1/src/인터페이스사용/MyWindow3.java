@@ -43,7 +43,13 @@ public class MyWindow3 {
 		b2.setForeground(Color.RED);
 		b2.setBounds(136, 185, 200, 80);
 		f.add(b2);
-		
+		b2.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(b2, "b2을 클릭했음");
+			}
+		});
 		//클래스의 다형성(업캐스팅, 자동형변환)
 		//맨 끝!!
 		
