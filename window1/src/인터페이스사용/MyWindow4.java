@@ -65,7 +65,7 @@ public class MyWindow4 {
 					
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						JOptionPane.showMessageDialog(f, "좌석번호 " + i + "를 선택하셨군요.!!");
+						JOptionPane.showMessageDialog(f, "좌석번호 " + e.getActionCommand() + "를 선택하셨군요.!!");
 					}
 				});
 			}
