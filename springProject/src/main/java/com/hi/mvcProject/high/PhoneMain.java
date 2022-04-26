@@ -8,9 +8,9 @@ public class PhoneMain {
 		//추상메서드를 포함하고 있는 클래스는 객체생성안된다.
 		//인터페이스로 객체생성 불가능함.~~!!
 //		PhoneInteface p = new PhoneInteface();(X) 
-		PhoneClass phone = new PhoneClass();
-		phone.color = "빨강";
-		phone.size = 11;
+		PhoneInteface phone = new PhoneClass();
+		//phone.color = "빨강";
+		//phone.size = 11;
 	
 		phone.call();
 		

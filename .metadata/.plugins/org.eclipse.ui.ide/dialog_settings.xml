@@ -46,6 +46,16 @@
 		<item value="org.eclipse.tm.terminal.feature:10.5.0.202109270023"/>
 		<item value="org.eclipse.tm.terminal.view.feature:10.5.0.202110140133"/>
 		<item value="org.eclipse.userstorage:1.2.0.v20210517-0327"/>
+		<item value="org.eclipse.wb.core.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.core.ui.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.doc.user.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.layout.group.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.rcp.SWT_AWT_support:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.rcp.doc.user.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.rcp.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.swing.doc.user.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.swing.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.swt.feature:1.9.8.202203170939"/>
 		<item value="org.eclipse.wst.common.fproj:3.7.3.v202111212041"/>
 		<item value="org.eclipse.wst.json_ui.feature:1.1.10.v202103121626"/>
 		<item value="org.eclipse.wst.web_ui.feature:3.24.0.v202111190506"/>
