@@ -17,7 +17,7 @@
 --><!-- Note:  A "Server" is not itself a "Container", so you may not
      define subcomponents such as "Valves" at this level.
      Documentation at /docs/config/server.html
- --><Server port="8586" shutdown="SHUTDOWN">
+ --><Server port="8587" shutdown="SHUTDOWN">
   <Listener className="org.apache.catalina.startup.VersionLoggerListener"/>
   <!-- Security listener. Documentation at /docs/config/listeners.html
   <Listener className="org.apache.catalina.security.SecurityListener" />
@@ -60,7 +60,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector connectionTimeout="20000" port="9980" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" port="9981" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="spring06" path="/mvc04" reloadable="true" source="org.eclipse.jst.jee.server:spring06"/><Context docBase="springFinalProject" path="/mvcFinal" reloadable="true" source="org.eclipse.jst.jee.server:springFinalProject"/><Context docBase="springProject" path="/mvcProject" reloadable="true" source="org.eclipse.jst.jee.server:springProject"/><Context docBase="springBootStrap" path="/mvc001" reloadable="true" source="org.eclipse.jst.jee.server:springBootStrap"/><Context docBase="springCrawlingService" path="/mvcCrawling" reloadable="true" source="org.eclipse.jst.jee.server:springCrawlingService"/></Host>
+      <Context docBase="spring06" path="/mvc04" reloadable="true" source="org.eclipse.jst.jee.server:spring06"/><Context docBase="springFinalProject" path="/mvcFinal" reloadable="true" source="org.eclipse.jst.jee.server:springFinalProject"/><Context docBase="springProject" path="/mvcProject" reloadable="true" source="org.eclipse.jst.jee.server:springProject"/><Context docBase="springBootStrap" path="/mvc001" reloadable="true" source="org.eclipse.jst.jee.server:springBootStrap"/><Context docBase="springCrawlingService" path="/mvcCrawling" reloadable="true" source="org.eclipse.jst.jee.server:springCrawlingService"/><Context docBase="triptest5" path="/trip" reloadable="true" source="org.eclipse.jst.jee.server:triptest5"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+   <typeAliases>
+      <typeAlias type="com.hi.trip.member.MemberVO" alias="memberVO"></typeAlias>
+      <typeAlias type="com.hi.trip.itinerary.ItineraryVO" alias="itineraryVO"></typeAlias>
+      <typeAlias type="com.hi.trip.itineraryComment.ItineraryCommentVO" alias="itineraryCommentVO"></typeAlias>
+      <typeAlias type="com.hi.trip.place.PlaceVO" alias="placeVO"></typeAlias>
+      <typeAlias type="com.hi.trip.placeComment.PlaceCommentVO" alias="placeCommentVO"></typeAlias>
+      <typeAlias type="com.hi.trip.statistics.StatisticsVO" alias="statisticsVO"></typeAlias>
+      <typeAlias type="com.hi.trip.survey.SurveyVO" alias="surveyVO"></typeAlias>
+      <typeAlias type="com.hi.trip.surveyResult.SurveyResultVO" alias="surveyResultVO"></typeAlias>
+      
+   </typeAliases>
+   
+   <mappers>
+      <mapper resource="mapper/member.xml" />
+      <mapper resource="mapper/itinerary.xml" />
+      <mapper resource="mapper/itineraryComment.xml" />
+      <mapper resource="mapper/place.xml" />
+      <mapper resource="mapper/placeComment.xml" />
+      <mapper resource="mapper/statistics.xml" />
+      <mapper resource="mapper/survey.xml" />
+      <mapper resource="mapper/surveyResult.xml" />
+   </mappers>
+</configuration>

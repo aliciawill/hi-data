@@ -26,6 +26,8 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/administrator/Desktop/trip_5.zip"/>
+			<item value="/Users/administrator/Desktop/window1-익명클래스.zip"/>
 			<item value="/Users/administrator/Desktop/springProject-fileupload-ajax+timestamp.zip"/>
 			<item value="/Users/administrator/Desktop/springProject-fileupload-ajax.zip"/>
 			<item value="/Users/administrator/Desktop/springProject-fileupload.zip"/>
@@ -44,8 +46,6 @@
 			<item value="/Users/administrator/Desktop/mapper.zip"/>
 			<item value="/Users/administrator/Desktop/spring05-jquey+ajax.zip"/>
 			<item value="/Users/administrator/Desktop/spring04-최종코드.zip"/>
-			<item value="/Users/administrator/Desktop/spring04-중간코드-1.zip"/>
-			<item value="/Users/administrator/Desktop/spring03-최종코드.zip"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.internal.dialogs.WorkbenchEditorsDialog">
