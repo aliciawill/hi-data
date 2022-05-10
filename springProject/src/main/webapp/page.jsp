@@ -9,6 +9,6 @@
 alert('첨부파일 사이즈는 50M를 넘길 수 없습니다.');
 </script>
 </head>
-
+<img src="https://hiapple.s3.ap-northeast-2.amazonaws.com/mct.png" width="350" height="350">
 </html>
 
