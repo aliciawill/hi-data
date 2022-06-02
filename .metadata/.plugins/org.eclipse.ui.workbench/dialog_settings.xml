@@ -26,6 +26,10 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/administrator/Desktop/spring01.war"/>
+			<item value="/Users/administrator/Desktop/ShoppingMall.war"/>
+			<item value="/Users/administrator/Desktop/ShoppingMall.zip"/>
+			<item value="/Users/administrator/Desktop/trip.war"/>
 			<item value="/Users/administrator/Desktop/trip_5.war"/>
 			<item value="/Users/administrator/Desktop/trip_5.zip"/>
 			<item value="/Users/administrator/Desktop/window1-익명클래스.zip"/>
@@ -42,10 +46,6 @@
 			<item value="/Users/administrator/Desktop/springProject-중간코드(product까지).zip"/>
 			<item value="/Users/administrator/Desktop/spring부트스트랩.zip"/>
 			<item value="/Users/administrator/Desktop/spring06-mybatis(CRUD)_update2개주소.zip"/>
-			<item value="/Users/administrator/Desktop/spring06-mybatis(CRUD).zip"/>
-			<item value="/Users/administrator/Desktop/img.zip"/>
-			<item value="/Users/administrator/Desktop/mapper.zip"/>
-			<item value="/Users/administrator/Desktop/spring05-jquey+ajax.zip"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.internal.dialogs.WorkbenchEditorsDialog">

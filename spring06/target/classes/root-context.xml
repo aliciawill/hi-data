@@ -3,16 +3,16 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
-<context:property-placeholder location="db.properties" />	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 <!-- 싱글톤으로 만드는 설정.. -->		
 <!--DBCP dbcp = new DBCP(); -->
 <!-- DB프로그래밍의 1-2번을  해주는 클래스를 싱글톤 생성.  -->
 <bean id="dbcp" class="org.apache.commons.dbcp.BasicDataSource">
     <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-    <property name="url" value="jdbc:mysql://localhost:3306/big"></property>
+    <property name="url" value="jdbc:mysql://database-1.cqlh5as5aloo.us-west-1.rds.amazonaws.com:3306/shop
+    "></property>
     <property name="username" value="root"></property>
-    <property name="password" value="1234"></property>
+    <property name="password" value="wjsdnwls12"></property>
 </bean>
 
 <!-- myBatis설정만을 담당해주는 클래스   -->
